@@ -1,0 +1,33 @@
+{
+  "name": "glint-block",
+  "version": "1.0.0",
+  "author": "Andi Neck",
+  "license": "MIT",
+  "description": "Glint Block",
+  "keywords": [
+    "glintcms",
+    "dublex",
+    "glint",
+    "block"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glintcms/glint-block.git"
+  },
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "exclusive-or": "^1.0.1",
+    "inherits": "^2.0.1",
+    "is-browser": "^2.0.1",
+    "sliced": "0.0.5",
+    "utils-merge": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/glintcms/glint-block/issues"
+  },
+  "homepage": "https://github.com/glintcms/glint-block"
+}

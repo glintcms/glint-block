@@ -1,0 +1,27 @@
+.glintcms-block-hover {
+	border: dashed;
+	border-color: #FF0000;
+}
+
+.glintcms-block {
+	border: none;
+	border-color: #808080;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.glintcms-block-edit {
+	border: thin dashed;
+	border-color: #808080;
+	-moz-box-shadow: 0px 0px 10px 3px #AAAAAA;
+	box-shadow: 0px 0px 10px 3px #AAAAAA;	
+
+	background-color: #FFFFFA !important;
+	color: #5A5A5A !important;
+}
+
+.glintcms-block-text-center {
+	text-align: center;
+}
+
+
