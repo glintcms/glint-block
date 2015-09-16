@@ -1,7 +1,7 @@
 /**********************
  * Module Dependencies.
  *********************/
-var debug = require('debug')('glint:Block');
+var debug = require('debug')('glint-block');
 var isBrowser = require('is-browser');
 var slice = require('sliced');
 var merge = require('utils-merge');
