@@ -58,7 +58,7 @@ Block.prototype.api = Block.api = 'block';
     try {
       result = this.send.apply(this, [name].concat(args));
     } catch (e) {
-      console.error('block command', name, 'was not successful', e);
+      console.error('block command "', name, '" was not successful', e.stack);
       result = arg || errorReturn;
     }
     this.emit.apply(this, ['post-' + name].concat(args));
