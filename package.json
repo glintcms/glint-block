@@ -21,11 +21,9 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "exclusive-or": "^1.0.1",
     "inherits": "^2.0.1",
     "is-browser": "^2.0.1",
-    "sliced": "0.0.5",
-    "utils-merge": "^1.0.0"
+    "sliced": "0.0.5"
   },
   "bugs": {
     "url": "https://github.com/glintcms/glint-block/issues"

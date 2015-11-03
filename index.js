@@ -4,8 +4,6 @@
 var debug = require('debug')('glint-block');
 var isBrowser = require('is-browser');
 var slice = require('sliced');
-var merge = require('utils-merge');
-var xor = require('exclusive-or');
 var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
 
@@ -58,7 +56,9 @@ Block.prototype.api = Block.api = 'block';
     try {
       result = this.send.apply(this, [name].concat(args));
     } catch (e) {
-      console.error('block command "', name, '" was not successful', e.stack);
+      var message = 'block command "' + name + '" was not successful';
+      debug(message, e.message, e.stack);
+      console.log(message, ',arguments', args, ',selector', this.selector(), ',el', this.el());
       result = arg || errorReturn;
     }
     this.emit.apply(this, ['post-' + name].concat(args));
@@ -120,7 +120,7 @@ Block.prototype.init = function() {
   this.on('selector', function(selector) {
     if (isBrowser && selector) this.send('el', document.querySelector(selector));
   });
-}
+};
 
 
 Block.prototype.send = function(command, rest) {
